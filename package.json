@@ -2,6 +2,11 @@
   "name": "react-component-library",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Rachel Albritton",
+    "email": "rralbritton@gmail.com",
+    "url": "https://www.linkedin.com/in/rralbritton/"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
@@ -30,5 +35,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "chokidar": "^3.3.1",
+    "npm-run-all": "^4.1.5",
+    "react-docgen": "^5.2.0"
   }
 }
