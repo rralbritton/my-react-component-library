@@ -1,0 +1,27 @@
+/**GLOABAL TYPOGRAPHY*/
+/**DEQ Colors*/
+.deq-btn {
+  display: inline-block;
+  text-align: center;
+  background-color: #0080b7;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  vertical-align: center;
+  border: 1px solid transparent;
+  border-radius: 0.1rem;
+  text-transform: uppercase;
+  transition: all .2s; }
+  .deq-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    background-color: #0092d1; }
+  .deq-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.2); }
+
+.deq-btn-med {
+  padding: 0.5rem 1rem; }
+
+.deq-btn-sm {
+  padding: 0.5rem; }
