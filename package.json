@@ -43,6 +43,7 @@
     "jest-resolve": "24.9.0",
     "jest-watch-typeahead": "0.4.2",
     "mini-css-extract-plugin": "0.9.0",
+    "node-sass-chokidar": "^1.4.0",
     "optimize-css-assets-webpack-plugin": "5.0.3",
     "pnp-webpack-plugin": "1.6.0",
     "postcss-flexbugs-fixes": "4.1.0",
@@ -68,12 +69,15 @@
     "workbox-webpack-plugin": "4.3.1"
   },
   "scripts": {
+    "build-css": "node-sass-chokidar ./src -o ./src",
+    "watch-css": "npm run build-css && node-sass-chokidar ./src -o ./src --watch --recursive",
     "prestart": "npm run genDocs",
-    "start": "npm-run-all --parallel start-docs genDocs-watch",
+    "start": "npm-run-all --parallel start-docs genDocs-watch watch-css",
     "start-docs": "node scripts/start.js",
     "genDocs": "node scripts/generateComponentdata.js",
     "genDocs-watch": "npm run genDocs -- --watch",
-    "build": "node scripts/build.js",
+    "build": "npm-run-all build-css build.js",
+    "build-js": "node scripts/build.js",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {

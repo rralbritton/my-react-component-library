@@ -1,0 +1,18 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  background-color: #3030d8;
+  color: #cccccc;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  vertical-align: center;
+  border: 1px solid transparent;
+  border-radius: 0.1rem;
+  text-transform: uppercase;
+  transition: all .2s; }
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
