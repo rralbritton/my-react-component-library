@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './sass/deqVariables.scss';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import Docs from "./docs/Docs";
-import '../node_modules/highlight.js/styles/ocean.css'; //other options avaiable in styles
+import 'highlight.js/styles/ocean.css'; //other options avaiable in styles
 
 ReactDOM.render(<Docs />, document.getElementById('root'));
 

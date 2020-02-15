@@ -9,6 +9,7 @@ export default class ExampleError extends React.Component {
                 htmlId="example-optional"
                 label="First Name"
                 name="firstname"
+                placeholder="Input Required"
                 onChange={() => { }}
                 required
                 error="First name is required."
