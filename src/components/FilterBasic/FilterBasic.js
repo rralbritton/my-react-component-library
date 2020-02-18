@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 
-export default class SimpleFilter extends React.Component {
+export default class FilterBasic extends React.Component {
     constructor(props) {
         super(props);
 
@@ -31,7 +31,7 @@ export default class SimpleFilter extends React.Component {
                     className="form-control"
                     aria-describedby="searchbox"
                 />
-                <ul>
+                <ul className="list-style-none">
                     {filteredList.map(item => {
                         return <li key={item}>{item}</li>;
                     })}
@@ -39,4 +39,8 @@ export default class SimpleFilter extends React.Component {
             </div>
         );
     }
+}
+
+FilterBasic.propTypes = {
+    list: PropTypes.array.isRequired
 }

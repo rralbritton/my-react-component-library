@@ -22,14 +22,14 @@ class Example extends React.Component {
         const ExampleComponent = require(`./examples/${this.props.componentName}/${name}`).default;
         return (
             <div className="example">
-                {description && <h4>{description}</h4>}
+                {description && <p>{description}</p>}
 
                 <ExampleComponent />
 
-                <p>
+                <p className="mt-4">
                     <a href="javascript:void(0)" onClick={this.toggleCode}>
                         {showCode ? "Hide" : "Show"} Code
-          </a>
+                    </a>
                 </p>
 
                 {showCode && <CodeExample>{code}</CodeExample>}

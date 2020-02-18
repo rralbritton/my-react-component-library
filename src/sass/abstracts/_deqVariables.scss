@@ -1,0 +1,41 @@
+/** DEQ DEFAULTS NOT PART OF BS */
+
+/* GRID */
+$gutter-vertical: 5rem;
+$gutter-horizontal: 3rem;
+
+/** FONT DEFAULTS */
+$default-font-size: 1rem;
+$default-font-color: #1a1919;
+
+/** DEQ DEFAULT COLORS */
+$deq-primary-color: #0080b7;
+$deq-secondary-color: #00afd8;
+$deq-tertiary-color: #add362;
+
+
+/** BOOTSTRAP OVERRIDES */
+$input-placeholder-color: #ccc;
+$btn-border-radius: .1rem;
+$btn-border-radius-sm: .1rem;
+$btn-border-radius-lg: .1rem;
+
+/** Adding to Bootstrap Themes */
+/** This adds colors to the bootstrap themes and exposes them as class names where theme names are used
+*/
+$theme-colors: (
+    "deq-primary": $deq-primary-color,
+    "deq-secondary": $deq-secondary-color,
+    "deq-tertiary":$deq-tertiary-color,
+
+    "daq-primary":#1ab7da,
+    "ddw-primary": #147995,
+    "dwq-primary": #034a64,
+    "derr-primary": #05a68b,
+    "dwmrc-primary": #f26322
+);
+
+//This import must be AFTER the Bootstrap overrides in order for overides to work
+//Bootstrap documentation: https://getbootstrap.com/docs/4.0/getting-started/theming/#variable-defaults
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";

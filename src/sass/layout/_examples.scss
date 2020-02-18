@@ -1,0 +1,57 @@
+.clear {
+    clear: both;
+  }
+  
+  
+  td {
+    border-top: solid 1px #d3d3d3;
+  }
+  
+  td, th {
+    padding: 10px;
+  }
+  
+  table {
+    border-collapse:collapse;
+  }
+  
+  /* Documentation site component styles */
+  .example {
+    border: solid 1px #d3d3d3;
+    padding: 1.6rem;
+    margin-bottom: 16px;
+    background-color: #ebebeb;
+    max-width: 60rem;
+  }
+  
+  .example h4:first-of-type {
+     margin-top: 0;
+  }
+  
+  .example p:last-of-type {
+     margin-bottom: 0;
+  }
+  
+  .props tr td:last-of-type {
+    text-align: center;
+  }
+  
+  .props th, td {
+    text-align: left;
+    padding: 5px;
+  }
+  
+  .navigation {
+    float: left;
+    width: 250px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .navigation li {
+  
+    padding: 0.25rem 0;
+  }
+  .componentpage {
+    margin-left: 15rem;
+  }

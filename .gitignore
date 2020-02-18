@@ -32,7 +32,7 @@ yarn-error.log*
 /config/componentData.js
 
 # VSCode launch configuration
-launch.jso
+launch.json
 
 # Webstorm
 .idea

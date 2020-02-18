@@ -1,0 +1,58 @@
+.landing {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(./images/jasonBlackeye_Clouds_Resized.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    overflow: hidden;
+    margin: -1rem;
+  }
+  
+  .landing-text-box {
+    position: absolute;
+    width: 60%;
+    top: 10%;
+    left: 20%;
+    background-color: #fff;
+    opacity: .90;
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+
+  
+@media only screen and (max-width: 992px){
+    .landing-text-box{
+      width: 60%;
+      top: 20%;
+      left: 20%;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 768px){
+    .landing-text-box{
+      width: 70%;
+      top: 15%;
+      left: 15%;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 576px){
+    .landing-text-box{
+      width: 80%;
+      top: 10%;
+      left: 10%;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 414px){
+    .landing-text-box{
+      width: 90%;
+      top: 3%;
+      left: 5%;
+    }
+  
+  }
