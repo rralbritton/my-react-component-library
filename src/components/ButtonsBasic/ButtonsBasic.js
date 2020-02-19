@@ -12,7 +12,7 @@ ButtonBasic.propTypes = {
     label: PropTypes.string.isRequired,
 
     /** Name of theme to use: 
-     * deq-primary,  daq-primary, ddw-primary, dwq-primary, derr-primary, dwmrc-primary 
+     * 'deq-primary',  'daq-primary', 'ddw-primary', 'dwq-primary', 'derr-primary', 'dwmrc-primary' 
      * are all acceptable values
     */
 
