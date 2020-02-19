@@ -1,10 +1,10 @@
 import React from "react";
 import ButtonSubmit from "react-component-library/ButtonSubmit"
 
-/** Example Submit Button with className daq-primary */
+/** Example Submit Button with theme passed */
 export default function ExampleButtonBasicDaqPrimary() {
     return (
 
-        <ButtonSubmit />
+        <ButtonSubmit theme="derr-primary" />
     )
 }
