@@ -8108,6 +8108,9 @@ h3 {
   font-weight: 400;
   text-transform: uppercase; }
 
+.font-icon {
+  margin-left: .6rem; }
+
 .row {
   max-width: 114rem;
   /*1140px / 10 because 10rem = 1px*/

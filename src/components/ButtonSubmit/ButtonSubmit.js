@@ -5,23 +5,12 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import PropTypes from "prop-types";
 
 
-/*export default function ButtonSubmit({ theme, label }) {
+export default function ButtonSubmit({ theme, label, ...props }) {
     return (
         <ButtonBasic
             theme={theme}
-            label={`${label}`}
-        ><FontAwesomeIcon icon={faPaperPlane} />
+        >{label}<FontAwesomeIcon className="font-icon" icon={faPaperPlane} />
         </ButtonBasic>
-    )
-}*/
-
-export default function ButtonSubmit({ theme, label }) {
-    return (
-        <button
-            type="button"
-            className={`btn btn-${theme}`}
-        > {label} <FontAwesomeIcon icon={faPaperPlane} />
-        </button>
     )
 }
 

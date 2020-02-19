@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Label from '../Label';
 
 /** Text input with integrated label to enforce consistency in layout, error display, label placement, and required field marker. */
-function TextInput({ htmlId, name, label, type = "text", required = false, onChange, placeholder, value, error, children, ...props }) {
+function TextInput({ htmlId, name, label, type = "text", required = false, onChange, placeholder, value, error, children, style: userStyles = {}, ...props }) {
   return (
     <div style={{ marginBottom: 16 }}>
       <Label htmlFor={htmlId} label={label} required={required} />
@@ -14,7 +14,7 @@ function TextInput({ htmlId, name, label, type = "text", required = false, onCha
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        style={error && { border: 'solid 1px red' }}
+        style={userStyles}
         className="form-control"
         {...props} />
       {children}

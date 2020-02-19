@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-
+import TextInput from "../TextInput";
 
 export default class FilterBasic extends React.Component {
     constructor(props) {
@@ -23,13 +23,14 @@ export default class FilterBasic extends React.Component {
 
         return (
             <div>
-                <input
+                <TextInput
                     type="text"
                     value={this.state.search}
                     onChange={this.updateSearch.bind(this)}
                     placeholder="Enter Text Here..."
                     className="form-control"
                     aria-describedby="searchbox"
+                    style={this.props.style}
                 />
                 <ul className="list-style-none">
                     {filteredList.map(item => {

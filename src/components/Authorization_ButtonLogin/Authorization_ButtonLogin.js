@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from "prop-types";
 import { createUserManager } from 'redux-oidc';
+import ButtonBasic from "./../ButtonsBasic/ButtonsBasic";
 
 class Authorization_LoginButton extends Component {
 
@@ -14,9 +15,10 @@ class Authorization_LoginButton extends Component {
     }
 
     render() {
+
         return (
             <div>
-                <button className="btn btn-deq-primary-color m-2" onClick={this.onLoginButtonClick}>Login</button><br />
+                <ButtonBasic onClick={this.onLoginButtonClick} label="Login" {...this.props} />
             </div>
         )
     }

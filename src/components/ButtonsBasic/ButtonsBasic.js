@@ -1,10 +1,20 @@
 import React from 'react'
 import PropTypes from "prop-types";
 
-function ButtonBasic({ theme, label }) {
+function ButtonBasic({ theme, label, style: userStyles = {}, children, ...props }) {
     return (
-        <button className={`btn btn-${theme}`}>{label}</button>
+        <button
+            style={userStyles}
+            className={`btn btn-${theme}`}
+            {...props}>
+            {label}
+            {children}
+        </button>
     )
+}
+
+ButtonBasic.defaultProps = {
+    theme: "deq-primary"
 }
 
 ButtonBasic.propTypes = {
@@ -16,7 +26,11 @@ ButtonBasic.propTypes = {
      * are all acceptable values
     */
 
-    theme: PropTypes.string
+    theme: PropTypes.string,
+
+    /** style object - Allow users to create inline styles */
+    style: PropTypes.object
+
 }
 
 export default ButtonBasic;
