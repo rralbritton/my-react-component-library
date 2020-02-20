@@ -1,24 +1,23 @@
 import React from 'react'
 import PropTypes from "prop-types";
 
-function ButtonBasic({ theme, label, style: userStyles = {}, children, ...props }) {
+function ButtonHollow({ theme, label, style: userStyles = {}, children, ...props }) {
     return (
         <button
             style={userStyles}
-            className={`btn btn-${theme}`}
+            className={`btn btn-outline-${theme}`}
             {...props}>
-            
             {label}
             {children}
         </button>
     )
 }
 
-ButtonBasic.defaultProps = {
+ButtonHollow.defaultProps = {
     theme: "deq-primary"
 }
 
-ButtonBasic.propTypes = {
+ButtonHollow.propTypes = {
     /** Label for button */
     label: PropTypes.string.isRequired,
 
@@ -34,4 +33,4 @@ ButtonBasic.propTypes = {
 
 }
 
-export default ButtonBasic;
+export default ButtonHollow;

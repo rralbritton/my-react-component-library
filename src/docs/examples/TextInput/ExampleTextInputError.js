@@ -13,6 +13,7 @@ export default class ExampleError extends React.Component {
                 onChange={() => { }}
                 required
                 error="First name is required."
+                style={{ width: "40%" }}
             />
         )
     }

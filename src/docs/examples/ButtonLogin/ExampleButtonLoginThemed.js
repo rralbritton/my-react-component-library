@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonLogin from "react-component-library/Authorization_ButtonLogin";
+import ButtonLogin from "react-component-library/ButtonLogin";
 
 
 /** Login button using Redux-OIDC connect. 

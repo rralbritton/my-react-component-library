@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
-import LoginButton from '../Authorization_ButtonLogin';
+import LoginButton from '../ButtonLogin';
 import { PropTypes } from "prop-types";
 
 
 export default class Layout_LoginPage extends Component {
     render() {
+        const { userManager, message, appName } = this.props;
+
         return (
             <div
                 className="landing"
@@ -12,11 +14,11 @@ export default class Layout_LoginPage extends Component {
                 <div className="landing-text-box" >
                     <div className="row">
                         <div className="col-md-12 text-center">
-                            <h1 className="ow">{this.props.appName}</h1>
-                            {this.props.message ?
-                                <h3>{this.props.message}</h3> : <h3>Please Login</h3>}
+                            <h1 className="ow">{appName}</h1>
+                            {message ?
+                                <h3>{message}</h3> : <h3>Please Login</h3>}
                             <hr />
-                            <LoginButton userManager={this.props.userManager} />
+                            <LoginButton userManager={userManager} />
                         </div>
                     </div>
                 </div>

@@ -5,7 +5,7 @@ import Label from '../Label';
 /** Text input with integrated label to enforce consistency in layout, error display, label placement, and required field marker. */
 function TextInput({ htmlId, name, label, type = "text", required = false, onChange, placeholder, value, error, children, style: userStyles = {}, ...props }) {
   return (
-    <div style={{ marginBottom: 16 }}>
+    <div>
       <Label htmlFor={htmlId} label={label} required={required} />
       <input
         id={htmlId}
@@ -52,7 +52,10 @@ TextInput.propTypes = {
   error: PropTypes.string,
 
   /** Child component to display next to the input */
-  children: PropTypes.node
+  children: PropTypes.node,
+
+  /** User inline styles */
+  style: PropTypes.object
 };
 
 export default TextInput;
